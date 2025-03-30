@@ -22,7 +22,10 @@ def str_to_float(float_string: str) -> float:
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
     
     input_year = int(input('Ener the report year: '))
     username = input('ICLUB username: ')
